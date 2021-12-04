@@ -105,5 +105,5 @@ if __name__ == '__main__':
     part_one_solution = binary_diagnostic.calculate_power_consumption()
     print(f"part one solution: {part_one_solution}")
 
-    part_two_solution =binary_diagnostic.calculate_life_support_rating()
+    part_two_solution = binary_diagnostic.calculate_life_support_rating()
     print(f"part two solution: {part_two_solution}")
