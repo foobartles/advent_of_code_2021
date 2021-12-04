@@ -1,5 +1,6 @@
 from typing import List
 
+
 def count_depth_increases(data: List[int]) -> int:
     num_increased = 0
 
@@ -10,6 +11,7 @@ def count_depth_increases(data: List[int]) -> int:
             num_increased += 1
 
     return num_increased
+
 
 def count_depth_sum_increases(data: List[int]) -> int:
     num_increased = 0
@@ -26,9 +28,10 @@ def count_depth_sum_increases(data: List[int]) -> int:
 
     return num_increased
 
+
 if __name__ == '__main__':
     submarine_data = []
-    with open('puzzle_inputs/day_one.txt', 'r') as f:
+    with open('puzzle_inputs/day_1.txt', 'r') as f:
         for line in f:
             submarine_data.append(int(line))
 
