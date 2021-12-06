@@ -24,7 +24,7 @@ class LanternFishSchoolModel:
 
     def _simulate_day(self):
         spawn_timer_copy = self.spawn_timer_counts.copy()
-        for i in range(8):
+        for i in range(self.NEW_FISH_SPAWN_TIMER):
             spawn_timer_copy[i] = spawn_timer_copy[i+1]
         spawn_timer_copy[self.NEW_FISH_SPAWN_TIMER] = self.spawn_timer_counts[0]
         spawn_timer_copy[self.OLD_FISH_REFRESH_SPAWN_TIMER] += self.spawn_timer_counts[0]
