@@ -56,7 +56,7 @@ class OceanFloorVentMap:
                 self.max_x = big_x_vent.x
             if big_y_vent.y > self.max_y:
                 self.max_y = big_y_vent.y
-    
+
             # add empty rows until there are enough rows for new vent line
             while big_y_vent.y >= len(self.diagram):
                 self.diagram.append([])
