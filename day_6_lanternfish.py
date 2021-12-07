@@ -13,7 +13,10 @@ class LanternFishSchoolModel:
     def _reset_model(self):
         self.spawn_timer_counts = dict.fromkeys(range(self.NEW_FISH_SPAWN_TIMER+1), 0)
         for timer in self.starting_timers:
-            self.spawn_timer_counts[timer] += 1
+            if timer in self.spawn_timer_counts:
+                self.spawn_timer_counts[timer] += 1
+            else:
+                print("bad input: spawn timer with value greater than max value")
 
     def model_fish_growth(self, number_of_days: int) -> int:
         self._reset_model()
